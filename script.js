@@ -4,7 +4,7 @@ document.getElementById('product-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const preco = document.getElementById('preco').value;
   const grama = document.getElementById('grama').value;
-  const PrecoPorGrama = (preco / grama).toFixed(2);
+  const PrecoPorGrama = (preco / grama).toFixed(3);
   const productName = `Produto ${products.length + 1}`;
   products.push({ name: productName, PrecoPorGrama: PrecoPorGrama });
   document.getElementById('preco').value = '';
